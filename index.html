@@ -15,6 +15,18 @@
       code.inactive {
         color: #ccc;
       }
+      .note .selector,
+      code .selector {
+        color: #c45933;
+      }
+      .note .property,
+      code .property {
+        color: #33c468;
+      }
+      .note .value,
+      code .value {
+        color: #2f5bad;
+      }
     </style>
   </head>
   <body class="shower list">
@@ -214,6 +226,112 @@
         <li>CSS styling</li>
         <li class="inactive">JavaScript interactivity</li>
       </ol>
+    </section>
+
+    <section class="slide" id="css-styling">
+      <h2>CSS styling</h2>
+      <ul>
+        <li>CSS is a language that defines the <b>styles</b> on a web page.</li>
+        <li>
+          It can be used to specify the <b>colors</b>, <b>fonts</b>, and
+          <b>layouts</b> for a web page.
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="css-rule">
+      <h2>A CSS rule</h2>
+      <pre>
+        <code><span class="selector">h1</span> {</code>
+        <code>  <span class="property">font-size:</span> <span class="value">32px;</span></code>
+        <code>  <span class="property">color:</span> <span class="value">blue;</span></code>
+        <code>}</code>
+      </pre>
+      <p class="note next">
+        <span class="selector">h1</span> is the <b>selector</b>
+      </p>
+      <p class="note next">
+        <span class="property">font-size</span> and
+        <span class="property">color</span> are <b>properties</b>
+      </p>
+      <p class="note next">
+        <span class="value">32px</span> and <span class="value">blue</span> are
+        <b>values</b>
+      </p>
+      <style>
+        #css-rule p {
+          margin-bottom: 0;
+        }
+      </style>
+    </section>
+
+    <section class="slide css-selectors" id="css-selectors">
+      <h2>CSS selectors</h2>
+      <pre>
+        <code>&lt;p&gt;Reviews of Harry Potter and the Sorcerer's Stone&lt;/p&gt;</code>
+        <code>&lt;p&gt;Kelsey's review...&lt;/p&gt;</code>
+        <code>&lt;p&gt;Anna's review...&lt;/p&gt;</code>
+        <code>&lt;p&gt;Emily's review...&lt;/p&gt;</code>
+      </pre>
+      <style>
+        .slide.css-selectors pre {
+          font-size: 0.7em;
+        }
+        .slide.css-selectors code {
+          line-height: 1.4em;
+        }
+      </style>
+    </section>
+
+    <section class="slide css-selectors" id="css-selectors-tag">
+      <h2>CSS selectors</h2>
+      <pre>
+        <code>&lt;<mark>p</mark>&gt;Reviews of Harry Potter and the Sorcerer's Stone&lt;<mark>/p</mark>&gt;</code>
+        <code>&lt;<mark>p</mark>&gt;Kelsey's review...&lt;<mark>/p</mark>&gt;</code>
+        <code>&lt;<mark>p</mark>&gt;Anna's review...&lt;<mark>/p</mark>&gt;</code>
+        <code>&lt;<mark>p</mark>&gt;Emily's review...&lt;<mark>/p</mark>&gt;</code>
+      </pre>
+      <div>
+        <h3>Tag</h3>
+        <code><mark>p</mark> { ... }</code>
+      </div>
+    </section>
+
+    <section class="slide css-selectors" id="css-selectors-class">
+      <h2>CSS selectors</h2>
+      <pre>
+        <code>&lt;p&gt;Reviews of Harry Potter and the Sorcerer's Stone&lt;/p&gt;</code>
+        <code>&lt;p <mark>class="review"</mark>>Kelsey's review...&lt;/p&gt;</code>
+        <code>&lt;p <mark>class="review"</mark>>Anna's review...&lt;/p&gt;</code>
+        <code>&lt;p <mark>class="review"</mark>>Emily's review...&lt;/p&gt;</code>
+      </pre>
+      <div>
+        <h3>Class</h3>
+        <code
+          ><mark><span class="important">.</span>review</mark> { ... }</code
+        >
+      </div>
+      <style>
+        .css-selectors :not(pre) code .important {
+          color: var(--color-red);
+        }
+      </style>
+    </section>
+
+    <section class="slide css-selectors" id="css-selectors-class">
+      <h2>CSS selectors</h2>
+      <pre>
+        <code>&lt;p&gt;Reviews of Harry Potter and the Sorcerer's Stone&lt;/p&gt;</code>
+        <code>&lt;p class="review" <mark>id="my-review"</mark>>...&lt;/p&gt;</code>
+        <code>&lt;p class="review"&gt;...&lt;/p&gt;</code>
+        <code>&lt;p class="review"&gt;...&lt;/p&gt;</code>
+      </pre>
+      <div>
+        <h3>ID</h3>
+        <code
+          ><mark><span class="important">#</span>my-review</mark> { ... }</code
+        >
+      </div>
     </section>
 
     <section class="slide" id="outline-4">
