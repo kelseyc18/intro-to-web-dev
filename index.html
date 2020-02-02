@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Intro to Web Development</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="node_modules/@shower/ribbon/styles/styles.css"
+        />
+        <style>
+            .shower {
+                --slide-ratio: calc(16 / 9);
+            }
+            li.inactive {
+                color: #ccc;
+            }
+            code.inactive {
+                color: #ccc;
+            }
+        </style>
+    </head>
+    <body class="shower list">
+        <header class="caption">
+            <h1>Intro to Web Development</h1>
+            <p>Kelsey Chan and Kelsey Wong</p>
+        </header>
+
+        <section class="slide" id="cover">
+            <h2>Intro to Web Development</h2>
+            <p>Brought to you by Kelsey Chan and Kelsey Wong</p>
+            <figure>
+                <img
+                    class="cover"
+                    src="pictures/cover.jpg"
+                    alt="Hands on the orange typewriter in a park"
+                />
+                <div class="overlay"></div>
+                <figcaption class="copyright right white">
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Marvin Meyer</a
+                    >
+                    on <a href="https://unsplash.com/">Unsplash</a>
+                </figcaption>
+            </figure>
+            <style>
+                #cover h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    text-align: center;
+                    font-size: 70px;
+                }
+
+                #cover p {
+                    margin: 10px 0 0;
+                    text-align: center;
+                    color: white;
+                    font-style: italic;
+                    font-size: 20px;
+                }
+
+                #cover p a {
+                    color: white;
+                }
+
+                #cover img {
+                    width: 100%;
+                    opacity: 0.5;
+                    object-fit: cover;
+                }
+
+                section#cover {
+                    background: black;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="outline">
+            <h2>Outline</h2>
+            <ol>
+                <li>Classroom expectations</li>
+                <li class="inactive">HTML content</li>
+                <li class="inactive">CSS styling</li>
+                <li class="inactive">JavaScript interactivity</li>
+            </ol>
+        </section>
+
+        <section class="slide" id="classroom-expectations">
+            <h2>Classroom expectations</h2>
+            <ul>
+                <li class="next">We won't give you all the answers.</li>
+                <li class="next">This will be challenging.</li>
+                <li class="next">
+                    Collaborate with your peers to solve problems.
+                </li>
+                <li class="next">Ask questions when you need help.</li>
+            </ul>
+        </section>
+
+        <section class="slide" id="outline-2">
+            <h2>Outline</h2>
+            <ol>
+                <li class="inactive">Classroom expectations</li>
+                <li>HTML content</li>
+                <li class="inactive">CSS styling</li>
+                <li class="inactive">JavaScript interactivity</li>
+            </ol>
+        </section>
+
+        <section class="slide" id="html-content">
+            <h2>HTML content</h2>
+            <p>
+                <b>HTML</b> is a markup language that defines the structure of a
+                web page.
+            </p>
+
+            <div class="center">
+                <code
+                    ><mark>&lt;p&gt;</mark>Some text here.<mark
+                        >&lt;/p&gt;</mark
+                    ></code
+                >
+            </div>
+            <div class="center next">
+                <code
+                    >&lt;a <mark>href="https://www.google.com"</mark>&gt;Link to
+                    Google&lt;/a&gt;</code
+                >
+            </div>
+            <style>
+                #html-content .center {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #html-content .center + .center {
+                    margin-top: 40px;
+                }
+
+                #html-content code {
+                    align-self: center;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="html-content-2">
+            <h2>HTML content</h2>
+            <pre>
+                <code>&lt;div&gt;</code>
+                <code>  &lt;p&gt;Some text here.&lt;/p&gt;</code>
+                <code>  &lt;p&gt;Some &lt;b&gt;bold&lt;/b&gt; text below.&lt;/p&gt;</code>
+                <code>&lt;/div&gt;</code>
+            </pre>
+            <p class="note">HTML can be nested</p>
+        </section>
+
+        <section class="slide" id="html-doc">
+            <pre>
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code>&lt;html&gt;</code>
+                <code>  &lt;head&gt;</code>
+                <code class="inactive">    &lt;meta charset="utf-8"/&gt;</code>
+                <code class="inactive">    &lt;meta name="viewport" content="width=device-width"&gt;</code>
+                <code class="inactive">    &lt;title&gt;Add your title here!&lt;/title&gt;</code>
+                <code>  &lt;/head&gt;</code>
+                <code>  &lt;body&gt;</code>
+                <code class="inactive">    &lt;p&gt;Here is some &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;</code>
+                <code>  &lt;/body&gt;</code>
+                <code>&lt;/html&gt;</code>
+            </pre>
+            <style>
+                #html-doc code,
+                #html-doc-2 code,
+                #html-doc-3 code {
+                    line-height: 1.6;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="html-doc-2">
+            <pre>
+                <code class="inactive">&lt;!DOCTYPE html&gt;</code>
+                <code class="inactive">&lt;html&gt;</code>
+                <code>  &lt;head&gt;</code>
+                <code>    &lt;meta charset="utf-8"/&gt;</code>
+                <code>    &lt;meta name="viewport" content="width=device-width"&gt;</code>
+                <code>    &lt;title&gt;Add your title here!&lt;/title&gt;</code>
+                <code>  &lt;/head&gt;</code>
+                <code class="inactive">  &lt;body&gt;</code>
+                <code class="inactive">    &lt;p&gt;Here is some &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;</code>
+                <code class="inactive">  &lt;/body&gt;</code>
+                <code class="inactive">&lt;/html&gt;</code>
+            </pre>
+        </section>
+
+        <section class="slide" id="html-doc-3">
+            <pre>
+                <code class="inactive">&lt;!DOCTYPE html&gt;</code>
+                <code class="inactive">&lt;html&gt;</code>
+                <code class="inactive">  &lt;head&gt;</code>
+                <code class="inactive">    &lt;meta charset="utf-8"/&gt;</code>
+                <code class="inactive">    &lt;meta name="viewport" content="width=device-width"&gt;</code>
+                <code class="inactive">    &lt;title&gt;Add your title here!&lt;/title&gt;</code>
+                <code class="inactive">  &lt;/head&gt;</code>
+                <code>  &lt;body&gt;</code>
+                <code>    &lt;p&gt;Here is some &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;</code>
+                <code>  &lt;/body&gt;</code>
+                <code class="inactive">&lt;/html&gt;</code>
+            </pre>
+        </section>
+
+        <section class="slide" id="outline-3">
+            <h2>Outline</h2>
+            <ol>
+                <li class="inactive">Classroom expectations</li>
+                <li class="inactive">HTML content</li>
+                <li>CSS styling</li>
+                <li class="inactive">JavaScript interactivity</li>
+            </ol>
+        </section>
+
+        <section class="slide" id="outline-4">
+            <h2>Outline</h2>
+            <ol>
+                <li class="inactive">Classroom expectations</li>
+                <li class="inactive">HTML content</li>
+                <li class="inactive">CSS styling</li>
+                <li>JavaScript interactivity</li>
+            </ol>
+        </section>
+
+        <footer class="badge">
+            <a href="https://github.com/shower/shower">Powered by Shower</a>
+        </footer>
+
+        <div class="progress"></div>
+
+        <script src="shower/shower.min.js"></script>
+        <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+    </body>
+</html>
