@@ -344,6 +344,50 @@
       </ol>
     </section>
 
+    <section class="slide" id="js-interactivity">
+      <h2>JavaScript interactivity</h2>
+      <ul>
+        <li>JavaScript is a language that defines the <b>interactivity</b> on a web page.</li>
+        <li>
+          It can be used to specify <b>responses</b> to button clicks, <b>dynamic styling</b>,
+          or <b>animations</b> on a web page.
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="js load-script">
+      <h2>Loading our scripts</h2>
+      The following HTML element tells our web page to load its scripts from the script.js file:
+
+      <pre>
+        <code><script src="script.js"></script></code>
+      </pre>
+    </section>
+
+    <section class="slide" id="js write-script">
+      <h2>Accessing the HTML elements</h2>
+      In our script, we can use the document variable to refer to our HTML document.
+      The document has many helpful functions, like:
+
+      <pre>
+        <code>document.getElementById("my-id");</code>
+        <code>document.getElementsByTagName("body");</code>
+        <code>document.querySelectorAll("div.some_class")</code>
+      </pre>
+    </section>
+
+    <section class="slide" id="js listeners">
+      <h2>Adding listeners</h2>
+      To make our web page interactive, it's useful to add <b>listeners</b>.
+
+      <pre>
+        <code>let myButton = document.getElementById("my-button");</code>
+        <code>myButton.addEventListener("click", function() {</code>
+        <code>  alert("Surprise!");</code>
+        <code>});</code>
+      </pre>
+    </section>
+
     <footer class="badge">
       <a href="https://github.com/shower/shower">Powered by Shower</a>
     </footer>
