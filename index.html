@@ -334,6 +334,17 @@
       </div>
     </section>
 
+    <section class="slide" id="html-css-doc">
+      <h2>Go through the HTML and CSS sections at your own pace!</h2>
+      <h3><a href="https://coda.io/@kelsey/intro-to-web-development">coda.io/@kelsey/intro-to-web-development</a></h3>
+      <p>Remember you can ask your peers and mentors for help 😎</p>
+      <style>
+        #html-css-doc h2 {
+          padding-top: 40px;
+        }
+      </style>
+    </section>
+
     <section class="slide" id="outline-4">
       <h2>Outline</h2>
       <ol>
@@ -347,7 +358,7 @@
     <section class="slide" id="js-interactivity">
       <h2>JavaScript interactivity</h2>
       <ul>
-        <li>JavaScript is a language that defines the <b>interactivity</b> on a web page.</li>
+        <li>JavaScript is a language that we can use to make our web page <b>interactive</b>.</li>
         <li>
           It can be used to specify <b>responses</b> to button clicks, <b>dynamic styling</b>,
           or <b>animations</b> on a web page.
@@ -355,37 +366,53 @@
       </ul>
     </section>
 
-    <section class="slide" id="js load-script">
+    <section class="slide" id="js-load-script">
       <h2>Loading our scripts</h2>
-      The following HTML element tells our web page to load its scripts from the script.js file:
+      <p>The following HTML element tells the browser to apply the code in script.js to the HTML file:</p>
 
       <pre>
-        <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+        <code><span class="blue">&lt;script</span> src="script.js"<span class="blue">&gt;&lt;/script&gt;</span></code>
       </pre>
+      <style>
+        .blue {
+          color: var(--color-blue);
+        }
+      </style>
     </section>
 
-    <section class="slide" id="js write-script">
+    <section class="slide" id="js-write-script">
       <h2>Accessing the HTML elements</h2>
-      In our script, we can use the document variable to refer to our HTML document.
-      The document has many helpful functions, like:
+      <p>In our script, we can use the <code>document</code> variable to refer to our HTML document.
+      The document has many helpful functions, like:</p>
 
       <pre>
-        <code>document.getElementById("my-id");</code>
-        <code>document.getElementsByTagName("body");</code>
-        <code>document.querySelectorAll("div.some_class")</code>
+        <code>document.<mark>getElementById</mark>("my-id");</code>
+        <code class="next">document.<mark>getElementsByTagName</mark>("body");</code>
+        <code class="next">document.<mark>querySelectorAll</mark>("div.some_class")</code>
       </pre>
     </section>
 
-    <section class="slide" id="js listeners">
-      <h2>Adding listeners</h2>
-      To make our web page interactive, it's useful to add <b>listeners</b>.
+    <section class="slide" id="js-listeners">
+      <h2>Adding event listeners</h2>
+      <p>To make our web page interactive, we can add <b>event listeners</b>. This allows us to run certain code whenever an event (e.g. a button click) occurs.</p>
 
       <pre>
-        <code>let myButton = document.getElementById("my-button");</code>
-        <code>myButton.addEventListener("click", function() {</code>
+        <code class="inactive">let myButton = document.getElementById("my-button");</code>
+        <code>myButton.<mark>addEventListener("click", function() {</mark></code>
         <code>  alert("Surprise!");</code>
-        <code>});</code>
+        <code><mark>});</mark></code>
       </pre>
+    </section>
+
+    <section class="slide" id="javascript-doc">
+      <h2>Feel free to continue the HTML and CSS sections or start on the JavaScript portion</h2>
+      <h3><a href="https://coda.io/@kelsey/intro-to-web-development">coda.io/@kelsey/intro-to-web-development</a></h3>
+      <p>Remember you can ask your peers and mentors for help 😎</p>
+      <style>
+        #javascript-doc h2 {
+          padding-top: 40px;
+        }
+      </style>
     </section>
 
     <footer class="badge">
